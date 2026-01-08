@@ -1,28 +1,58 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
+
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Aryan<span>.</span></h1>
+
+        <nav class="nav">
             <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'about' %}">About Me</a>
-            <a href="{% url 'contact' %}">Contact Me</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+<section class="hero">
+    <div class="container">
+        <h2>Hi, I'm <span>Aryan Shrestha</span></h2>
+        <p>
+            Python Backend Developer | Django | APIs | QA Background  
+        </p>
+        <a href="{% url 'contact' %}" class="btn">Hire Me</a>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
-    </footer>
+<main class="container">
+    {% block content %}
+
+    <section class="about-preview">
+        <h3>About Me</h3>
+        <p>
+            I am a backend-focused developer with experience in Django, REST APIs,
+            and software testing. I enjoy building scalable systems and writing
+            clean, maintainable code.
+        </p>
+    </section>
+    {% endblock %}
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Aryan Shrestha. All rights reserved.</p>
+        <p class="footer-small">Built with Django ❤️</p>
+    </div>
+</footer>
+
 </body>
 </html>

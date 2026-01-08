@@ -1,13 +1,37 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
-<section>
-    <h2>About Me</h2>
-    <p>I’m a web developer specializing in Django. I love creating clean, functional, and responsive web applications.</p>
-    <ul>
-        <li>Python & Django</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>REST APIs & PostgreSQL</li>
-    </ul>
+<section class="about">
+    <div class="about-header">
+        <h2>About Me</h2>
+        <p class="subtitle">
+            Passionate Django Developer focused on building scalable backend systems
+        </p>
+    </div>
+
+    <div class="about-content">
+        <p>
+            I’m <strong>Aryan Shrestha</strong>, a Python and Django developer with a strong
+            interest in backend development and API design. I enjoy turning complex
+            problems into clean, efficient, and maintainable solutions.
+        </p>
+
+        <p>
+            With experience in both development and software testing, I bring a
+            quality-first mindset to every project. I focus on writing secure code,
+            optimizing performance, and following best practices.
+        </p>
+
+        <h3>Technical Skills</h3>
+        <ul class="skills">
+            <li>Python & Django (REST Framework)</li>
+            <li>REST APIs & Backend Architecture</li>
+            <li>PostgreSQL & Database Design</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Git, GitHub & Version Control</li>
+            <li>Testing & QA Fundamentals</li>
+            <li>Automation testing with Selenium</li>
+        </ul>
+    </div>
 </section>
 {% endblock %}
