@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Database
+db.sqlite3
+
+# Environment file (secrets)
+.env
+
+# Django static files (optional if using collectstatic)
+staticfiles/
